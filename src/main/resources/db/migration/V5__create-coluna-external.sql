@@ -1,0 +1,1 @@
+alter table trips add external_id bigint not null
