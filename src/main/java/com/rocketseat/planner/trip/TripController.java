@@ -25,8 +25,6 @@ public class TripController {
 		this.tripService = tripService;
 	}
 
-	// =========== TRIPS ===========
-
 	@PostMapping
 	public ResponseEntity<TripCreateResponse> createTrip(@RequestBody TripRequestPayload payload) {
 		return tripService.criaTrip(payload);
@@ -60,7 +58,5 @@ public class TripController {
 	public List<Trip> lista() {
 		return tripService.listaTrips();
 	}
-
-	// =========== FIM DAS TRIPS ===========
 
 }
